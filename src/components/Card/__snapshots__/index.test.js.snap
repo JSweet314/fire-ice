@@ -10,6 +10,18 @@ ShallowWrapper {
     founded=""
     name="House Corbray of Heart's Home"
     seats="Heart's Home"
+    swornMembers={
+        Array [
+            "255",
+            "256",
+            "447",
+            "654",
+            "677",
+            "681",
+            "871",
+            "1182",
+          ]
+    }
     titles={
         Array [
             "Lord of Heart's Home",
