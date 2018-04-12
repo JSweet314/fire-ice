@@ -17,7 +17,7 @@ describe('getHousesSuccess', () => {
 
 describe('captureErrorMessage', () => {
   it('should return an action of type CAPTURE_ERROR_MESSAGE', () => {
-    const errorMessage = 'error'
+    const errorMessage = 'error';
     const expected = {type: 'CAPTURE_ERROR_MESSAGE', errorMessage };
     expect(actions.captureErrorMessage(errorMessage)).toEqual(expected);
   });

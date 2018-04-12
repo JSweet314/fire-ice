@@ -1,41 +1,20 @@
-import React, { Component } from 'react';
-import PropTypes, { shape, func, string } from 'prop-types';
+import React from 'react';
 import logo from './logo.svg';
 import './style.css';
-import { connect } from 'react-redux';
-import * as actions from '../../actions';
+import CardContainer from '../../containers/CardContainer';
 
-export class App extends Component {
-
-  componentDidMount = () => {
-    this.props.getHouses();
-  }
-
-  render = () => {
-    return (
-      <div className='App'>
-        <div className='App-header'>
-          <img src={logo} className='App-logo' alt='logo' />
-          <h2>Welcome to Westeros</h2>
-          <button onClick={() => {}}> FAKE ACTION</button>
-        </div>
-        <div className='Display-info'>
-        </div>
+const App = () => {
+  return (
+    <div className='App'>
+      <div className='App-header'>
+        <img src={logo} className='App-logo' alt='logo' />
+        <h2>Welcome to Westeros</h2>
       </div>
-    );
-  }
-}
-
-App.propTypes = {
-  getHouses: PropTypes.func.isRequired
+      <div className='Display-info'>
+        <CardContainer />
+      </div>
+    </div>
+  );
 };
 
-const mapStateToProps = ({ houses }) => ({
-  houses 
-});
-
-const mapDispatchToProps = dispatch => ({ 
-  getHouses: () => dispatch(actions.getHouses())
-});
-
-export default connect(mapStateToProps, mapDispatchToProps)(App);
+export default App;

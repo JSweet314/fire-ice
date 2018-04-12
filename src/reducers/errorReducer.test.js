@@ -7,7 +7,7 @@ describe('errorReducer', () => {
   });
 
   it('should set state with an error message for CAPTURE_ERROR_MESSAGE', () => {
-    const mockAction = actions.captureErrorMessage('error')
+    const mockAction = actions.captureErrorMessage('error');
     expect(errorReducer(undefined, mockAction)).toEqual('error');
   });
 });
