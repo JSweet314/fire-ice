@@ -5,9 +5,9 @@ import * as actions from '../actions';
 export function* getHousesSaga() {
   try {
     const response = yield call(API.fetchHouses);
-    yield put(actions.captureHouses(response));
+    yield put(actions.getHousesSuccess(response));
   } catch (error) {
-    throw new Error(error.message);
+    yield put(actions.getHousesFailure(error.message));
   }
 }
 
