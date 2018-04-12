@@ -11,7 +11,6 @@ describe('CardContainer', () => {
   const mockGetMembers = jest.fn();
   const mockRemoveMembersDisplay = jest.fn();
   const mockAddMembersDisplay = jest.fn();
-  const mockCardGenerator = jest.fn();
   const mockHouses = helpers.housesDataWrangler(mockData.mockHouses);
   beforeEach(() => {
     wrapper = shallow(
