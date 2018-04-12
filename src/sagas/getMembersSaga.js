@@ -13,6 +13,7 @@ export function* getMembersSaga(action) {
     yield put(
       actions.getMembersSuccess({name: action.house.name, swornMembers})
     );
+    yield put(actions.addMembersDisplay(action.house.name));
   } catch (error) {
     throw new Error(`Error getting members: ${error.message}`);
   }

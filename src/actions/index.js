@@ -21,3 +21,13 @@ export const captureErrorMessage = errorMessage => ({
   type: 'CAPTURE_ERROR_MESSAGE',
   errorMessage
 });
+
+export const addMembersDisplay = houseName => ({
+  type: 'DISPLAY_MEMBERS',
+  houseName
+});
+
+export const removeMembersDisplay = houseName => ({
+  type: 'REMOVE_MEMBERS',
+  houseName
+});
