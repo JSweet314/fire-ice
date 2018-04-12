@@ -35,6 +35,7 @@ ShallowWrapper {
           House Corbray of Heart's Home
 </h2>,
         <h3 />,
+        <h4 />,
         <p>
           Seats: 
           Heart's Home
@@ -83,6 +84,17 @@ ShallowWrapper {
         "ref": null,
         "rendered": "",
         "type": "h3",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "",
+        },
+        "ref": null,
+        "rendered": "",
+        "type": "h4",
       },
       Object {
         "instance": null,
@@ -183,6 +195,7 @@ ShallowWrapper {
             House Corbray of Heart's Home
 </h2>,
           <h3 />,
+          <h4 />,
           <p>
             Seats: 
             Heart's Home
@@ -231,6 +244,17 @@ ShallowWrapper {
           "ref": null,
           "rendered": "",
           "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "",
+          },
+          "ref": null,
+          "rendered": "",
+          "type": "h4",
         },
         Object {
           "instance": null,

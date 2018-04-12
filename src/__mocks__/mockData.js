@@ -1,3 +1,4 @@
+/* eslint-disable max-len*/
 export const mockHouses = [{
   ancestralWeapons: ["Lady Forlorn"],
   cadetBranches: [],

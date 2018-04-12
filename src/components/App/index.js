@@ -1,9 +1,6 @@
-import React, { Component } from 'react';
-import PropTypes, { shape, func, string } from 'prop-types';
+import React from 'react';
 import logo from './logo.svg';
 import './style.css';
-import { connect } from 'react-redux';
-import * as actions from '../../actions';
 import CardContainer from '../../containers/CardContainer';
 
 const App = () => {
@@ -18,6 +15,6 @@ const App = () => {
       </div>
     </div>
   );
-}
+};
 
 export default App;

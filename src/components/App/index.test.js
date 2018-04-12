@@ -4,7 +4,6 @@ import App from './index';
 
 describe('App', () => {
   let wrapper;
-  const mockGetHouses = jest.fn();
   beforeEach(() => {
     wrapper = shallow(<App/>);
   });
