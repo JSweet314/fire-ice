@@ -2,11 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Card = (
-  {name, founded, seats, titles, coatOfArms, ancestralWeapons, words}
+  {name, founded, seats, titles, coatOfArms, ancestralWeapons, words, swornMembers, handleOnClick}
 ) => {
   const titlePs = titles.map(title => <p key={title}>Title: {title}</p>);
+  // const swornMembers = 
   return (
-    <article className='Card'>
+    <article 
+      onClick={() => handleOnClick({swornMembers, name})}
+      className='Card'>
       <h2>{name}</h2>
       <h3>{words}</h3>
       <h4>{founded}</h4>

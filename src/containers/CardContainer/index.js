@@ -10,8 +10,12 @@ export class CardContainer extends Component {
     this.props.getHouses();
   }
 
+  handleOnClick = house => {
+    this.props.getMembers(house);
+  }
+
   cardGenerator = () => this.props.houses.map((house, index) => 
-    <Card {...house} key={index}/>
+    <Card {...house} key={index} handleOnClick={this.handleOnClick}/>
   )
 
   render = () => {
@@ -28,6 +32,7 @@ export class CardContainer extends Component {
 
 CardContainer.propTypes = {
   getHouses: PropTypes.func.isRequired,
+  getMembers: PropTypes.func.isRequired,
   houses: PropTypes.array.isRequired
 };
 
@@ -36,7 +41,8 @@ export const mapStateToProps = ({ houses }) => ({
 });
 
 export const mapDispatchToProps = dispatch => ({
-  getHouses: () => dispatch(actions.getHouses())
+  getHouses: () => dispatch(actions.getHouses()),
+  getMembers: membersArray => dispatch(actions.getMembers(membersArray))
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(CardContainer);

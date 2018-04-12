@@ -1,6 +1,5 @@
-import * as helpers from '../helpers';
-
 const rootURL = 'http://localhost:3001/api/v1';
+
 export const fetchHouses = async () => {
   try {
     const response = await fetch(`${rootURL}/houses`);
@@ -14,17 +13,17 @@ export const fetchHouses = async () => {
   }
 };
 
-export const fetchSwornMember = async memberId => {
-  try {
-    const response = await fetch(`${rootURL}/character/${memberId}`);
-    if (!response.ok) {
-      throw new Error(
-        `Error getting member ${memberId}, status code: ${response.status}`
-      );
+export const fetchSwornMembers = members => {
+  const unresolvedMembers = members.map(async member => {
+    try {
+      const response = await fetch(`${rootURL}/character/${member}`);
+      if (!response.ok) {
+        throw new Error(`Bad response, status code -${response.status}`);
+      }
+      return await response.json();
+    } catch (error) {
+      throw new Error(`Error fetching members: ${error.message}`); 
     }
-    const rawMembers = await response.json();
-    return helpers.swornMembersDataWrangler(rawMembers);
-  } catch (error) {
-    throw new Error(`Error fetching members: ${error.message}`);
-  }
+  });
+  return Promise.all(unresolvedMembers);
 };
