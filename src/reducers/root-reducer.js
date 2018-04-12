@@ -1,8 +1,10 @@
 import { combineReducers } from 'redux';
 import { housesReducer } from './housesReducer';
+import { errorReducer } from './errorReducer';
 
 const rootReducer = combineReducers({
-  houses: housesReducer
+  houses: housesReducer,
+  errorMessage: errorReducer
 });
 
 
