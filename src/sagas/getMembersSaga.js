@@ -15,7 +15,7 @@ export function* getMembersSaga(action) {
     );
     yield put(actions.addMembersDisplay(action.house.name));
   } catch (error) {
-    throw new Error(`Error getting members: ${error.message}`);
+    yield put(actions.captureErrorMessage(error.message));
   }
 }
 

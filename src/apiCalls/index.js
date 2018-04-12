@@ -18,7 +18,7 @@ export const fetchSwornMembers = members => {
     try {
       const response = await fetch(`${rootURL}/character/${member}`);
       if (!response.ok) {
-        throw new Error(`Bad response, status code -${response.status}`);
+        throw new Error(`Bad response, status code - ${response.status}`);
       }
       return await response.json();
     } catch (error) {

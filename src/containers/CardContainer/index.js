@@ -13,11 +13,9 @@ export class CardContainer extends Component {
   handleOnClick = house => {
     const { memberDisplay } = this.props;
     if (Object.keys(memberDisplay).includes(house.name)) {
-      if(memberDisplay[house.name]) {
-        this.props.removeMembersDisplay(house.name);
-      } else {
-        this.props.addMembersDisplay(house.name);
-      }
+      memberDisplay[house.name] ? 
+        this.props.removeMembersDisplay(house.name)
+        : this.props.addMembersDisplay(house.name);
     } else {
       this.props.getMembers(house);
     }

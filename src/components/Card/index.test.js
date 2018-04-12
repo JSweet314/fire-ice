@@ -7,7 +7,9 @@ import { mockHouses } from '../../__mocks__/mockData';
 describe('Card', () => {
   const mockHouse = housesDataWrangler(mockHouses)[0];
   it('should match a snapshot', () => {
-    const wrapper = shallow(<Card {...mockHouse} />);
+    const wrapper = shallow(
+      <Card {...mockHouse} display='' handleOnClick={jest.fn()} />
+    );
     expect(wrapper).toMatchSnapshot();
   });
 });
