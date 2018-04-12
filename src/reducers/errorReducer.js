@@ -1,6 +1,6 @@
 export const errorReducer = (state = '', action) => {
   switch (action.type) {
-  case 'GET_HOUSES_FAILURE':
+  case 'CAPTURE_ERROR_MESSAGE':
     return action.errorMessage;
   default:
     return state;

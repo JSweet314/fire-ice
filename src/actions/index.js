@@ -7,7 +7,7 @@ export const getHousesSuccess = houses => ({
   houses
 });
 
-export const getHousesFailure = errorMessage => ({
-  type: 'GET_HOUSES_FAILURE',
+export const captureErrorMessage = errorMessage => ({
+  type: 'CAPTURE_ERROR_MESSAGE',
   errorMessage
 });

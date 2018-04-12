@@ -7,7 +7,7 @@ export function* getHousesSaga() {
     const response = yield call(API.fetchHouses);
     yield put(actions.getHousesSuccess(response));
   } catch (error) {
-    yield put(actions.getHousesFailure(error.message));
+    yield put(actions.captureErrorMessage(error.message));
   }
 }
 

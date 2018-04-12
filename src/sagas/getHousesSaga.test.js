@@ -41,7 +41,7 @@ describe('getHousesSaga', () => {
   it('should throw an error if appropriate', () => {
     const generator = getHousesSaga();
     generator.next();
-    const expected = put(actions.getHousesFailure('error message'));
+    const expected = put(actions.captureErrorMessage('error message'));
     expect(generator.throw(new Error('error message')).value).toEqual(expected);
   });
 });

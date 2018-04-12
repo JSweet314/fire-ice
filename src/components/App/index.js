@@ -1,16 +1,17 @@
 import React, { Component } from 'react';
 import PropTypes, { shape, func, string } from 'prop-types';
 import logo from './logo.svg';
-import './App.css';
+import './style.css';
 import { connect } from 'react-redux';
 import * as actions from '../../actions';
-class App extends Component {
 
-  componentDidMount() {
+export class App extends Component {
+
+  componentDidMount = () => {
     this.props.getHouses();
   }
 
-  render() {
+  render = () => {
     return (
       <div className='App'>
         <div className='App-header'>
@@ -36,4 +37,5 @@ const mapStateToProps = ({ houses }) => ({
 const mapDispatchToProps = dispatch => ({ 
   getHouses: () => dispatch(actions.getHouses())
 });
+
 export default connect(mapStateToProps, mapDispatchToProps)(App);
