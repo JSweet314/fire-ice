@@ -1,9 +1,11 @@
 import * as API from './index';
+import { housesDataWrangler } from '../helpers';
+import {mockHouses} from '../__mocks__/mockData';
 
 describe('fetchHouses', () => {
   window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
     ok: true,
-    json: () => Promise.resolve([{house: 'white'}])
+    json: () => Promise.resolve(mockHouses)
   }));
 
   it('should call fetch with the correct params', () => {
@@ -12,8 +14,8 @@ describe('fetchHouses', () => {
     expect(window.fetch).toHaveBeenCalledWith(expected);
   });
 
-  it('should return an array of houses data', async () => {
-    const expected = [{house: 'white'}];
+  it('should return an array of clean houses data', async () => {
+    const expected = housesDataWrangler(mockHouses);
     await expect(API.fetchHouses()).resolves.toEqual(expected);
   });
 
