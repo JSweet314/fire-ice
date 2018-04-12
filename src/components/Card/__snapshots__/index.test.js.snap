@@ -7,7 +7,9 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <Card
     ancestralWeapons="Lady Forlorn"
     coatOfArms="Three black ravens in flight, holding three red hearts, on a white field(Argent, three ravens volant sable, each clutching in their claws a heart gules)"
+    display=""
     founded=""
+    handleOnClick={[Function]}
     name="House Corbray of Heart's Home"
     seats="Heart's Home"
     swornMembers={
@@ -70,6 +72,38 @@ ShallowWrapper {
           Coat of Arms: 
           Three black ravens in flight, holding three red hearts, on a white field(Argent, three ravens volant sable, each clutching in their claws a heart gules)
 </p>,
+        <div
+          style={
+                    Object {
+                              "display": "",
+                            }
+          }
+>
+          <p>
+                    : 
+          </p>
+          <p>
+                    : 
+          </p>
+          <p>
+                    : 
+          </p>
+          <p>
+                    : 
+          </p>
+          <p>
+                    : 
+          </p>
+          <p>
+                    : 
+          </p>
+          <p>
+                    : 
+          </p>
+          <p>
+                    : 
+          </p>
+</div>,
       ],
       "className": "Card",
       "onClick": [Function],
@@ -194,6 +228,198 @@ ShallowWrapper {
         ],
         "type": "p",
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <p>
+              : 
+</p>,
+            <p>
+              : 
+</p>,
+            <p>
+              : 
+</p>,
+            <p>
+              : 
+</p>,
+            <p>
+              : 
+</p>,
+            <p>
+              : 
+</p>,
+            <p>
+              : 
+</p>,
+            <p>
+              : 
+</p>,
+          ],
+          "style": Object {
+            "display": "",
+          },
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "0",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                undefined,
+                ": ",
+                undefined,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              undefined,
+              ": ",
+              undefined,
+            ],
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                undefined,
+                ": ",
+                undefined,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              undefined,
+              ": ",
+              undefined,
+            ],
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": "2",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                undefined,
+                ": ",
+                undefined,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              undefined,
+              ": ",
+              undefined,
+            ],
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": "3",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                undefined,
+                ": ",
+                undefined,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              undefined,
+              ": ",
+              undefined,
+            ],
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": "4",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                undefined,
+                ": ",
+                undefined,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              undefined,
+              ": ",
+              undefined,
+            ],
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": "5",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                undefined,
+                ": ",
+                undefined,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              undefined,
+              ": ",
+              undefined,
+            ],
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": "6",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                undefined,
+                ": ",
+                undefined,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              undefined,
+              ": ",
+              undefined,
+            ],
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": "7",
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                undefined,
+                ": ",
+                undefined,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              undefined,
+              ": ",
+              undefined,
+            ],
+            "type": "p",
+          },
+        ],
+        "type": "div",
+      },
     ],
     "type": "article",
   },
@@ -231,6 +457,38 @@ ShallowWrapper {
             Coat of Arms: 
             Three black ravens in flight, holding three red hearts, on a white field(Argent, three ravens volant sable, each clutching in their claws a heart gules)
 </p>,
+          <div
+            style={
+                        Object {
+                                    "display": "",
+                                  }
+            }
+>
+            <p>
+                        : 
+            </p>
+            <p>
+                        : 
+            </p>
+            <p>
+                        : 
+            </p>
+            <p>
+                        : 
+            </p>
+            <p>
+                        : 
+            </p>
+            <p>
+                        : 
+            </p>
+            <p>
+                        : 
+            </p>
+            <p>
+                        : 
+            </p>
+</div>,
         ],
         "className": "Card",
         "onClick": [Function],
@@ -354,6 +612,198 @@ ShallowWrapper {
             "Three black ravens in flight, holding three red hearts, on a white field(Argent, three ravens volant sable, each clutching in their claws a heart gules)",
           ],
           "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <p>
+                : 
+</p>,
+              <p>
+                : 
+</p>,
+              <p>
+                : 
+</p>,
+              <p>
+                : 
+</p>,
+              <p>
+                : 
+</p>,
+              <p>
+                : 
+</p>,
+              <p>
+                : 
+</p>,
+              <p>
+                : 
+</p>,
+            ],
+            "style": Object {
+              "display": "",
+            },
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  undefined,
+                  ": ",
+                  undefined,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                undefined,
+                ": ",
+                undefined,
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  undefined,
+                  ": ",
+                  undefined,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                undefined,
+                ": ",
+                undefined,
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": "2",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  undefined,
+                  ": ",
+                  undefined,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                undefined,
+                ": ",
+                undefined,
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": "3",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  undefined,
+                  ": ",
+                  undefined,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                undefined,
+                ": ",
+                undefined,
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": "4",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  undefined,
+                  ": ",
+                  undefined,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                undefined,
+                ": ",
+                undefined,
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": "5",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  undefined,
+                  ": ",
+                  undefined,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                undefined,
+                ": ",
+                undefined,
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": "6",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  undefined,
+                  ": ",
+                  undefined,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                undefined,
+                ": ",
+                undefined,
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": "7",
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  undefined,
+                  ": ",
+                  undefined,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                undefined,
+                ": ",
+                undefined,
+              ],
+              "type": "p",
+            },
+          ],
+          "type": "div",
         },
       ],
       "type": "article",
