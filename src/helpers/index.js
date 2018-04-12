@@ -6,5 +6,6 @@ export const housesDataWrangler = housesArray =>
     titles: house.titles,
     coatOfArms: house.coatOfArms,
     ancestralWeapons: house.ancestralWeapons.join(', '),
-    words: house.words
+    words: house.words,
+    swornMembers: house.swornMembers.map(member => member.slice(49))
   }));

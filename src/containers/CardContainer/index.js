@@ -28,7 +28,7 @@ export class CardContainer extends Component {
 
 CardContainer.propTypes = {
   getHouses: PropTypes.func.isRequired,
-  houses: PropTypes.object.isRequired
+  houses: PropTypes.array.isRequired
 };
 
 export const mapStateToProps = ({ houses }) => ({
