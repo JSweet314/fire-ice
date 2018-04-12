@@ -15,8 +15,7 @@ describe('fetchHouses', () => {
   });
 
   it('should return an array of clean houses data', async () => {
-    const expected = housesDataWrangler(mockHouses);
-    await expect(API.fetchHouses()).resolves.toEqual(expected);
+    await expect(API.fetchHouses()).resolves.toEqual(mockHouses);
   });
 
   it('should throw an error if the response is not ok', async () => {
@@ -24,7 +23,9 @@ describe('fetchHouses', () => {
       ok: false,
       status: 500
     }));
-    const expected = Error('Error getting houses, status code: 500');
+    const expected = Error(
+      'Error fetching houses: Bad response, status code - 500'
+    );
     await expect(API.fetchHouses()).rejects.toEqual(expected);
   });
 });

@@ -7,7 +7,27 @@ export const getHousesSuccess = houses => ({
   houses
 });
 
+export const getMembers = house => ({
+  type: 'GET_MEMBERS',
+  house
+}); 
+
+export const getMembersSuccess = house => ({
+  type: 'GET_MEMBERS_SUCCESS',
+  house
+});
+
 export const captureErrorMessage = errorMessage => ({
   type: 'CAPTURE_ERROR_MESSAGE',
   errorMessage
+});
+
+export const addMembersDisplay = houseName => ({
+  type: 'DISPLAY_MEMBERS',
+  houseName
+});
+
+export const removeMembersDisplay = houseName => ({
+  type: 'REMOVE_MEMBERS',
+  houseName
 });
