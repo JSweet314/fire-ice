@@ -40,7 +40,7 @@ describe('getMembersSuccess', () => {
 
 describe('addMembersDisplay', () => {
   it('should return an action of type DISPLAY_MEMBERS', () => {
-    const houseName = 'white'
+    const houseName = 'white';
     const expected = { type: 'DISPLAY_MEMBERS', houseName };
     expect(actions.addMembersDisplay(houseName)).toEqual(expected);
   });
